@@ -1,0 +1,96 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<!DOCTYPE html>
+
+<style>
+#calculator {
+    width: 75%;
+}
+button {
+    margin-left: 20%;
+    width: 75px;
+
+}
+
+#calcScreen {
+    border: 1px;
+    border-color: grey;
+    border-style:inset;
+    margin: 10px;
+    width:100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+#calcScreen span {
+    float:right;
+}
+</style>    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>My First Bootstrap Page</h1>
+            <p>This is some text.</p>
+        </div>
+        <div class="container-fluid card btn" id="calculator"style="font-size: 50px;background-color:aquamarine">
+<!-- Control the column width, and how they should appear on differnt devices-->
+            <div class="row" id="calcScreen"><span>0</span></div>
+            <div class="row">
+                <div class="col-*-*"><button>(</button></div>
+                <div class="col-*-*"><button>)</button></div>
+                <div class="col-*-*"><button>%</button></div>
+                <div class="col-*-*" id="ac"><button>ac</button></div>
+            </div>
+            <div class="row">
+                <div class="col-*-*"><button>7</button></div>
+                <div class="col-*-*"><button>8</button></div>
+                <div class="col-*-*"><button>9</button></div>
+                <div class="col-*-*"><button>/</button></div>
+            </div>
+            <div class="row">
+                <div class="col-*-*"><button>4</button></div>
+                <div class="col-*-*"><button>5</button></div>
+                <div class="col-*-*"><button>6</button></div>
+                <div class="col-*-*"><button>X</button></div>
+            </div>
+            <div class="row">
+                <div class="col-*-*" id="1"><button>1</button></div>
+                <div class="col-*-*"><button>2</button></div>
+                <div class="col-*-*"><button>3</button></div>
+                <div class="col-*-*"><button>-</button></div>
+            </div>
+            <div class="row">
+                    <div class="col-*-*"><button>0</button></div>
+                    <div class="col-*-*"><button>&nbsp;.</button></div>
+                    <div class="col-*-* blue" id="equals"><button>=</button></div>
+                    <div class="col-*-*"><button>+</button></div>
+                </div>
+        </div>
+
+        <!-- Or let Bootstrap automaticall handle the layout-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    
+    </body>
+    <script src="./src/app.js"></script>
+</html>
